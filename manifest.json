@@ -1,0 +1,10 @@
+{
+  "id": "harness-noting",
+  "name": "Harness Noting",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Create scoped note rules and check required properties, headings, filename patterns, folder structures, and vault root entries.",
+  "author": "Textcat",
+  "authorUrl": "https://github.com/Textcat",
+  "isDesktopOnly": false
+}

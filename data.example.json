@@ -1,0 +1,47 @@
+{
+  "checkOnModify": true,
+  "showNoticeOnViolation": true,
+  "rules": [
+    {
+      "id": "project-note",
+      "name": "Project note",
+      "enabled": true,
+      "matchLogic": "all",
+      "files": "",
+      "folders": "Projects",
+      "excludedFiles": "",
+      "excludedFolders": "Archive",
+      "excludedTags": "",
+      "tags": "",
+      "filenameIncludes": "Plan",
+      "propertyConditions": "",
+      "requiredProperties": "updated\ntags",
+      "propertyChecks": "tags contains project",
+      "requiredHeadings": "## Summary\n## Next steps",
+      "requireHeadingOrder": true,
+      "filenameRegex": "^[A-Za-z0-9 ._-]+ Plan$"
+    }
+  ],
+  "folderStructureRules": [
+    {
+      "id": "project-folder-structure",
+      "name": "Project folder structure",
+      "enabled": true,
+      "rootFolder": "Projects",
+      "includeFolderRegex": "",
+      "excludeFolderRegex": "",
+      "requiredSubfolders": "Assets",
+      "requiredFiles": "Overview.md\n* Plan.md"
+    }
+  ],
+  "rootWhitelistRules": [
+    {
+      "id": "vault-root-whitelist",
+      "name": "Vault root whitelist",
+      "enabled": true,
+      "allowedEntries": "Inbox\nProjects\nResources\nArchive\nHome.md",
+      "ignoredEntries": ".git\n.obsidian\n.trash\n.DS_Store",
+      "ignoreDotEntries": true
+    }
+  ]
+}
